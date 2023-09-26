@@ -121,6 +121,10 @@ nav ul li a {
   transform: scaleX(1);
 }
 
+ul li{
+  list-style-type: none;
+}
+
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
   .menu-bar {
@@ -193,7 +197,7 @@ margin-bottom: 10px;
 
 /* My Project */
 .projects{
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
 }
 
