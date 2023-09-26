@@ -123,11 +123,21 @@ card.addEventListener("mouseleave", (e) => {
   innerCard.style.filter = `drop-shadow(0 10px 15px ${dropShadowColor})`;
 });
 
- function readMore() {
-
+function readMore() {
   const moreInfo = document.querySelector('.js-more-info');
+  const moreInfoBtn = document.querySelector('.read-more');
 
-    if (moreInfo.innerHTML === '') {
-     moreInfo.innerHTML =  'As a developer, I am aware of the latest technologies and I make professional use of them to write efficient codes more faster. I am commited to researching about client needs and a such, I delve deeper into understanding what client need exactly and I write codes that solves their problems. This has made me to be more effiecient and this shows my dedicstion to improving my skills. <br> Also as a Biochemistry student, my ultimate goal is to use technology to make a positive impact in peoples lives. Whether its through developing new software that makes healthcare more accessible, or creating innovative solutions to environmental problems .My aim is to be your only Go-to develpper for your personal and company website experiences creation. Do you want to contact me for opportunities and/or collaborations? Kindly email me on jameelahadejoke001@gmail.com or Whatsapp me on +23481 652 103 31';
-    } else (moreInfo.innerHTML = '') 
-  }
+  if (moreInfo.innerHTML === '') {
+    moreInfo.innerHTML =  'As a developer, I am aware of the latest technologies and I make professional use of them to write efficient codes more faster. I am commited to researching about client needs and a such, I delve deeper into understanding what client need exactly and I write codes that solves their problems. This has made me to be more effiecient and this shows my dedicstion to improving my skills. <br> Also as a Biochemistry student, my ultimate goal is to use technology to make a positive impact in peoples lives. Whether its through developing new software that makes healthcare more accessible, or creating innovative solutions to environmental problems .My aim is to be your only Go-to develpper for your personal and company website experiences creation. Do you want to contact me for opportunities and/or collaborations? Kindly email me on jameelahadejoke001@gmail.com or Whatsapp me on +23481 652 103 31';
+  } else (moreInfo.innerHTML = '')
+
+  moreInfoBtn.style.display = "none"
+}
+
+const hamburgerButton = document.querySelector('.hamburger');
+const nav = document.querySelector('nav');
+
+hamburgerButton.addEventListener('click', () => {
+  nav.classList.toggle('show');
+  hamburgerButton.classList.toggle('close');
+});
