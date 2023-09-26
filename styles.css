@@ -545,6 +545,10 @@ li {
     margin: 5px 0;
   }
 
+  header{
+    padding: .9em 1.9em;
+  }
+
   nav {
     display: none;
     position: fixed;
